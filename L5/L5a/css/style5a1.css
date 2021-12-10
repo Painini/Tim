@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+/* ----- Grundstil för webbsidan ----- */
+
+html {
+    font-size: 16px;
+}
+
+html, body, div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e1d5b7;
+    color: #000000;
+    max-width: 800px;
+    margin: 0 auto;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* ----- Grid-layout för boxarna ----- */
+
+#wrapper { /* Stil för elementet som omger boxarna */
+    background-color: #ffffff;
+    width: 100%;
+    padding: 20px;
+}
+
+/* ----- Grid-stil för boxarna ----- */
+
+#wrapper div { /* Stil för alla boxar */
+    padding: 10px;
+    border: 6px solid #000000;
+}
+
+#box1 {
+    background-color: #d89228;
+}
+
+#box2 {
+    background-color: #4fcd6c;
+}
+
+#box3 {
+    background-color: #2886d8;
+}
+
+#box4 {
+    background-color: #da6f57;
+}
+
+#box5 {
+    background-color: #ededa0;
+}

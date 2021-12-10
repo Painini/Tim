@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+/* ----- Grundstil för webbsidan ----- */
+
+html {
+    font-size: 16px;
+}
+
+html, body {
+    height: 100%;
+}
+
+html, body, nav, header, main, aside, footer, article, section, div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ----- Layout ----- */
+
+body {
+    background-color: #e1d5b7;
+    color: #000000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: grid;
+    grid-template-columns: auto minmax(300px,1000px) 200px auto;
+    grid-template-rows: min-content 100px auto 70px;
+    grid-template-areas:
+        ".      nav    nav    ."
+        "header header header header"
+        ".      main   aside  ."
+        "footer footer footer footer";
+}
+
+/* ----- Utformning av navigeringen ----- */
+
+#menuicon {
+    display: inline-block;
+    background-image: url(../img/menuicon.png);
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+#menucheckbox {
+    display: none;
+}
+
+#menucheckbox ~ ul {
+    display: none;
+}
+
+#menucheckbox:checked ~ ul {
+    display: flex;
+}
+
+nav {
+    grid-area: nav;
+    background-color: #4fcd6c;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+}
+
+nav a {
+    text-decoration: none;
+    display: block;
+    padding: 0.4rem;
+}
+
+nav a:link, nav a:visited {
+    background-color: #096d3a;
+    color: #FFFFFF;
+}
+
+nav a:hover, nav a:active {
+    background-color: #20985a;
+    color: #e3eed7;
+}
+
+nav a.thisPage {
+    background-color: #1e39d0;
+}
+
+/* ------ Slut på  navigering ----- */
+
+header {
+    grid-area: header;
+    background-color: #d89228;
+    padding: 10px;
+}
+
+header h1 {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main {
+    grid-area: main;
+    background-color: #ededa0;
+    padding: 10px;
+}
+
+aside {
+    grid-area: aside;
+    background-color: #da6f57;
+    padding: 10px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #2886d8;
+    padding: 10px;
+}

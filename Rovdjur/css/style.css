@@ -1,0 +1,113 @@
+html {
+    font-size: 16px;
+    background-color: rgb(250, 155, 66);
+}
+
+html, body {
+    height: 100%;
+}
+
+html, body, nav, header, main, aside, footer, article, section, div, h1 {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+h1{
+    background-color: rgb(250, 155, 66);
+    left: 14.2%;
+    position: relative;
+}
+
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "leftside box1 aside"
+    "leftside box2 aside"
+    "leftside box3 aside"
+    "leftside box4 aside"
+    "leftside box5 aside" 
+}
+
+figure{
+    position:relative;
+    left:25%;
+}
+
+p{
+    font-family: "arial";
+    background-color: rgb(255, 160, 106);
+    border: 4px solid rgb(255, 160, 106);
+    border-radius: 8px;
+    max-width: 50%;
+    line-height: 1.2em;
+    position: relative;
+}
+
+h2{
+    font-family: "arial";
+    background-color: rgb(255, 160, 106);
+    border: 4px solid rgb(255, 160, 106);
+    border-radius: 8px;
+    line-height: 1.2em;
+    max-width: 40%;
+}
+
+img{
+    height: 576px;
+    width: 1024x;
+    border: 10px solid rgb(173, 152, 131);
+    border-radius: 30px;
+    margin: 0px;
+    padding: 0px;
+
+
+}
+
+.box1{
+    grid-area: box1;
+    background-color:rgb(250, 194, 121);
+    border-top: 3px solid rgb(250, 155, 66);
+    border-radius: 5px;
+    margin-bottom: 2px;
+}
+
+.box2 {
+    grid-area: box2;
+    background-color:rgb(253, 191, 109);
+    margin-bottom: 2px;
+}
+
+.box3 {
+    grid-area: box3;
+    background-color:rgb(253, 187, 97);
+    margin-bottom: 2px;
+}
+
+.box4 {
+    grid-area: box4;
+    background-color:rgb(255, 180, 89);
+    margin-bottom: 2px;
+}
+
+.box5 {
+    grid-area: box5;
+    background-color:rgb(255, 175, 83);
+    margin-bottom: 25px;
+    
+}
+
+aside{
+    grid-area: aside;
+    background-color: rgb(250, 155, 66);
+}
+
+leftside{ 
+    grid-area: leftside;
+    background-color: rgb(250, 155, 66);
+}
+

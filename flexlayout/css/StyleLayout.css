@@ -1,0 +1,38 @@
+body {
+        background-color:sandybrown;
+      /*float: left; */
+}
+
+figure{
+    
+    flex-shrink: 1;
+    flex-grow: 0;
+}
+
+img{
+    border: 5px solid rgb(165, 97, 42);
+    margin: 3px;
+    max-width: 100%;
+    width: 600px; 
+    flex-basis: 100px;
+    border-radius: 3px;
+        
+}
+    .wrapper{
+    border: 5px solid rgb(165, 97, 42);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly; 
+    font-size: 20px;
+    margin: 100px;
+    background-color: rgb(230, 187, 132);
+
+    
+     
+}
+
+h1{
+    color: rgb(241, 69, 16);
+}
+

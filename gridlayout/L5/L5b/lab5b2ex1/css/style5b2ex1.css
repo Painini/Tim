@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+/* ----- Grundstil för webbsidan ----- */
+
+html {
+    font-size: 16px;
+}
+
+html, body {
+    height: 100%;
+}
+
+html, body, nav, header, main, aside, footer, article, section, div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ----- Layout ----- */
+
+body {
+    background-color: #e1d5b7;
+    color: #000000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: grid;
+    grid-template-columns: auto 150px minmax(300px,800px) 200px auto;
+    grid-template-rows: 100px auto 70px;
+    grid-template-areas:
+        "header header header header header"
+        ".      nav    main   aside  ."
+        "footer footer footer footer footer";
+}
+
+/* ----- Utformning av navigeringen ----- */
+
+nav {
+    grid-area: nav;
+    background-color: #4fcd6c;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+nav ul ul {
+    margin-left: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    display: block;
+    padding: 0.4rem;
+    text-align: left;
+}
+
+nav a:link, nav a:visited {
+    color: #075531;
+}
+
+nav a:hover, nav a:active {
+    color: #ffffff;
+}
+
+nav a.thisPage {
+    font-weight: bold;
+    color: #191eae;
+}
+
+/* ------ Slut på  navigering ----- */
+
+header {
+    grid-area: header;
+    background-color: #d89228;
+    padding: 10px;
+}
+
+header h1 {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+main {
+    grid-area: main;
+    background-color: #ededa0;
+    padding: 10px;
+}
+
+aside {
+    grid-area: aside;
+    background-color: #da6f57;
+    padding: 10px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #2886d8;
+    padding: 10px;
+}
