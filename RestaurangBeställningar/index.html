@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <figure>
+        <img src="img/monkey.jpg" alt="Monkey">
+        <img src="img/räv.jpg" alt="räv">
+    </figure>
+    
+
+
+
+
+<form>
+    <fieldset>
+        <legend>Man</legend>
+        <fieldset>
+            <legend>Myth</legend>
+            <fieldset>
+                <legend>Legend</legend>
+                <h1>
+                    The Obama Hut
+                </h1>
+            </fieldset>
+        </fieldset>
+    </fieldset>
+    <fieldset class="twoColumns">
+        <legend>Customer information</legend>
+
+            
+        <label>
+            Name:<input type = "text" name = "customerName">
+            E-Mail adress:<input type = "email" name = "customerMail">
+        </label>
+        <hr>
+
+        <label><input type="radio" name="Ätsätt" required> Eat here</label>
+        <label><input type="radio" name="Ätsätt"> Take away</label>
+        <label><input type="radio" name="Ätsätt"> No option</label>
+
+
+        <hr>
+        <label>
+            If eating here, please input amount of people present (One jump = One person): <input type ="range" min="0" max="10" name = "people amount"> 
+            <hr>
+            If taking away, please input time of pick up: <input type ="time" name = "time"> 
+        </label>
+    </fieldset>
+
+    <div></div>
+
+    <fieldset class="checkboxBoxes" >
+        <legend> Rätter</legend>
+
+        <fieldset>
+            <legend>Förrätter</legend>
+            <label> <input type = "checkbox" name = "förrätt"> Hamburger - 20$ </label>
+            <label>Antal: <input type = "number" name = "antal"></label>
+            <hr>
+            <label> <input type = "checkbox" name = "förrätt"> Fries - 10$ </label>
+            <label>Antal: <input type = "number" name = "antal"></label>
+            <hr>
+            <label> <input type = "checkbox" name = "förrätt"> Coke - 10$ </label>
+            <label>Antal: <input type = "number" name = "antal"></label>
+        </fieldset>
+        
+        <fieldset>
+            <legend> Varmrätter</legend>
+            <label> <input type = "checkbox" name = "varmrätt"> Falafel - 50$</label>
+            <label>Antal: <input type = "number" name = "antal"></label>
+            <hr>
+            <label> <input type = "checkbox" name = "varmrätt"> Fattoush - 100$</label>
+            <label>Antal: <input type = "number" name = "antal"></label>
+            <hr>
+            <label> <input type = "checkbox" name = "varmrätt"> Kofta - 300$</label>
+            <label>Antal: <input type = "number" name = "antal"></label>
+        </fieldset>
+
+        <fieldset>
+            <legend> Efterrätter</legend>
+            <label> <input type = "checkbox" name = "efterrätt"> Chocolate Chip Cookie - 1$ </label>
+            <label>Antal: <input type = "number" name = "antal"></label>
+            <hr>
+            <label> <input type = "checkbox" name = "efterrätt"> Michelle Obama's Cake - 400$ </label>
+            <label>Antal: <input type = "number" name = "antal"></label>
+            <hr>
+            <label> <input type = "checkbox" name = "efterrätt"> Obama's Favorite Apple Pie - 500$</label>
+            <label>Antal: <input type = "number" name = "antal"></label>
+        </fieldset>
+
+    </fieldset>
+
+    <div></div>
+
+    <fieldset>
+        <legend> Dryck</legend>
+
+        <label> <input type = "checkbox" name = "dryck"> Water - 5$ </label>
+        <label>Antal: <input type = "number" name = "antal"></label>
+            <hr>
+            <label> <input type = "checkbox" name = "dryck"> Super Expensive Wine - 500$ </label>
+            <label> Antal: <input type = "number" name = "antal"></label>
+            <hr>
+            <label> <input type = "checkbox" name = "dryck"> Pepsi - 20,000$</label>
+            <label> Antal:<input type = "number" name = "antal"></label>
+    </fieldset>
+
+        <div>
+            Meddelande till kocken:
+            <label> <textarea rows="2"> </textarea></label>
+        </div>
+        
+        
+    <hr>
+    <button type="submit" name = "send">Beställ</button>
+</form>
+
+
+<!-- Denna tabell ska innehålla i princip samma som där uppe. Just nu ska det vara statiskt. -->
+
+
+<table>
+    <caption> Din Beställning: </caption>
+    <tr rowspawn="1">
+        <td colspan="1">Förrätt</td>
+        <td colspan="2">Varmrätt</td>
+        <td colspan="3">Efterrätt</td>
+        <td colspan="4">Dryck</td>
+    </tr>
+
+    <tr rowspan="2">
+        <td colspan="1"></td>
+        <td colspan="2"></td>
+        <td colspan="3"></td>
+        <td colspan="3"></td>
+    </tr>
+
+    <tr rowspan="3">
+        <td colspan="1"></td>
+        <td colspan="2"></td>
+        <td colspan="3"></td>
+        <td colspan="3"></td>
+    </tr>
+
+    <tr rowspan="4">
+        <td colspan="1"></td>
+        <td colspan="2"></td>
+        <td colspan="3"></td>
+        <td colspan="3"></td>
+    </tr>
+
+</table>
+
+</body>
+</html>
