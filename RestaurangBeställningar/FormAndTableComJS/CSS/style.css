@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+html {
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #a2bfda;
+    color: #000000;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+fieldset{
+    border: 1px solid #adc4da;
+    background-color: #bed9f1;
+    margin-bottom: 1em;
+    padding: 1em;
+}
+
+legend {
+    font-weight: bold;
+}
+
+fieldset input {
+    max-width: 30ch;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #60676e;
+    padding: 10px;
+}
+
+.selectedRow{
+    border: 2px solid #ac272d;
+}
+
+.unselectedRow{
+    border: 1px solid #60676e;
+}
+
+.remButt {
+    width: 100%;
+    background-color:#a2bfda;
+    padding: 13px;
+    border:none;
+    cursor: pointer;
+}

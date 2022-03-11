@@ -63,7 +63,7 @@
 
         <fieldset>
             <legend>Förrätter</legend>
-            <label> <input type = "checkbox" name = "förrätt"> Hamburger - 20$ </label>
+            <label> <input type = "checkbox" name = "förrätt" id="hamburger"> Hamburger - 20$ </label>
             <label>Antal: <input type = "number" name = "antal"></label>
             <hr>
             <label> <input type = "checkbox" name = "förrätt"> Fries - 10$ </label>
@@ -121,41 +121,22 @@
         
         
     <hr>
-    <button type="button" name = "send">Beställ</button>
+    <button type="button" name = "send" onclick="SwitchToActive()" >Markera</button>
+    <button type="button" name = "unsend" onclick="SwitchOffActive()">Omarkera</button>
+    <button type="button" name = "close" onclick="RestaurantInformation.closeRestaurant(false)">yo mama fat</button>
 </form>
 
 
 <!-- Denna tabell ska innehålla i princip samma som där uppe. Just nu ska det vara statiskt. -->
 
 
-<table name = "DataTable">
+<table id="DataTable">
     <caption> Din Beställning: </caption>
     <tr rowspawn="1">
         <td colspan="1">Förrätt</td>
         <td colspan="2">Varmrätt</td>
         <td colspan="3">Efterrätt</td>
         <td colspan="4">Dryck</td>
-    </tr>
-
-    <tr rowspan="2">
-        <td colspan="1"></td>
-        <td colspan="2"></td>
-        <td colspan="3"></td>
-        <td colspan="3"></td>
-    </tr>
-
-    <tr rowspan="3">
-        <td colspan="1"></td>
-        <td colspan="2"></td>
-        <td colspan="3"></td>
-        <td colspan="3"></td>
-    </tr>
-
-    <tr rowspan="4">
-        <td colspan="1"></td>
-        <td colspan="2"></td>
-        <td colspan="3"></td>
-        <td colspan="3"></td>
     </tr>
 
 </table>

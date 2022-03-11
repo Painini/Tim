@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormAndTableCom</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script/script.js" defer></script>
+</head>
+<body>
+    <h1>Enkelt formulär vars information ska skickas ner till tabellen här nedan</h1>
+    <form id="mittFormulär">
+        <fieldset>
+            <legend>Information om dig</legend>
+            <label>Namn
+                <input type="text" name="namePerson" id="namePerson">
+            </label>
+            <label>Ålder
+                <input type="number" name="agePerson" id="agePerson" min="10" max="100">
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Personliga egenskaper</legend>
+            <input type="checkbox" id="coolPerson" name="coolPerson">
+            <label for="coolPerson">Cool</label>
+        </fieldset>
+        <fieldset>
+            <legend>Skicka information</legend>
+            <input type="reset" value="Rensa formuläret">
+            <input type="button" id="sendButton" value="Placera i tabellen" onclick="addDataToTable()">
+        </fieldset>
+        <fieldset>
+            <legend>Inmatad information (tabell)</legend>
+            <table id="myDataTable">
+                <tr>
+                    <th>Namn</th>
+                    <th>Ålder</th>
+                    <th>Personlighet</th>
+                    <th>Ta bort bokning</th>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+  
+</body>
+</html>
