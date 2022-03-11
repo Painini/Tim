@@ -10,11 +10,10 @@ const RestaurantInformation = {
     {
         this.restaurantOpen = openStatus;
         console.log("closed")
+        document.querySelector("#DataTable").classList.toggle("closed");
     }
 
 }
-
-
 
 function SwitchToActive()
 {
@@ -44,9 +43,4 @@ function AddDataRowToTable ()
     myDataTable.append(nyRad)
 
     console.log("rumpa")
-}
-
-if (document.querySelector("#hamburger").checked)
-{
-    AddDataRowToTable();
 }
