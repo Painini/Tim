@@ -11,17 +11,10 @@
 </head>
 <body>
 
-    
-
-
     <figure>
         <img src="img/monkey.jpg" alt="Monkey">
         <img src="img/räv.jpg" alt="räv">
     </figure>
-    
-
-
-
 
 <form>
     <fieldset>
@@ -30,12 +23,16 @@
             <legend>Myth</legend>
             <fieldset>
                 <legend>Legend</legend>
-                <h1>
-                    The Obama Hut
-                </h1>
+                <h1 id="storeName"></h1>
+                <p id ="storeEst"></p>
             </fieldset>
         </fieldset>
     </fieldset>
+
+    <label><input type ="checkbox" id="storyCheckbox" onclick="StoryHandler()">Toggle Story</label>
+    <!-- Ska försöka göra så att man kan ta bort story texten inom sidan med hjälp av funktion -->
+    <h1 id="storeStory"></h1>
+
     <fieldset class="twoColumns">
         <legend>Customer information</legend>
 
