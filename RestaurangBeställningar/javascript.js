@@ -16,7 +16,7 @@ const RestaurantInformation = {
 
 }
 
-let listOfIds =[document.querySelector("hamburger"), 
+let listOfIds= [document.querySelector("hamburger"), 
                 document.querySelector("fries"),
                 document.querySelector("coke"),
                 document.querySelector("falafel"),
@@ -62,9 +62,9 @@ function SwitchOffActive()
 function IfChecked(listOfIds)
 {
 
-    // Lägg till For-loop så att du kan gå genom alla dina ID såsom du tänkt.
+    // Lägg till For-loop så att du kan gå genom alla dina ID såsom du tänkt. (Alltså definierar du "i")
     
-    document.querySelector("[id=" + mittId + "]")
+    document.querySelector("[id=" + listOfIds[i] + "]")
 
 }
 
