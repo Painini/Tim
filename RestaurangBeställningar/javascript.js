@@ -16,6 +16,19 @@ const RestaurantInformation = {
 
 }
 
+let listOfIds =[document.querySelector("#hamburger"), 
+                document.querySelector("#fries"),
+                document.querySelector("#coke"),
+                document.querySelector("#falafel"),
+                document.querySelector("#fattoush"),
+                document.querySelector("#kofta"),
+                document.querySelector("#chocolate"),
+                document.querySelector("#cake"),
+                document.querySelector("#pie"),
+                document.querySelector("#water"),
+                document.querySelector("#wine"),
+                document.querySelector("#pepsi"),]
+
 // Här tester jag att skriva ut olika texter med hjälp av JavaScript.
 
   document.querySelector("#storeName").innerHTML = RestaurantInformation.name;
@@ -56,10 +69,10 @@ function AddDataRowToTable()
     <td>${document.querySelector("#fries").checked}</td> 
     <td>${document.querySelector("#coke").checked}</td> 
     `;
-    
+
     
     nyRad.innerHTML = formContent;
-    myDataTable.append(nyRad)
+    myDataTable.append(nyRad);
 
-    console.log("rumpa")
+    console.log("rumpa");
 }
