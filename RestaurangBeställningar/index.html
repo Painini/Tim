@@ -61,61 +61,54 @@
 
     <div></div>
 
-    <fieldset class="checkboxBoxes" >
-        <legend> Rätter</legend>
-
-        <fieldset>
+        <fieldset> 
             <legend>Förrätter</legend>
             <label> <input type = "checkbox" name = "förrätt" id="hamburger"> Hamburger - 20$ </label>
             <label>Antal: <input type = "number" name = "antal"></label>
             <hr>
-            <label> <input type = "checkbox" name = "förrätt"> Fries - 10$ </label>
+            <label> <input type = "checkbox" name = "förrätt" id="fries"> Fries - 10$ </label>
             <label>Antal: <input type = "number" name = "antal"></label>
             <hr>
-            <label> <input type = "checkbox" name = "förrätt"> Coke - 10$ </label>
+            <label> <input type = "checkbox" name = "förrätt" id="coke"> Coke - 10$ </label>
             <label>Antal: <input type = "number" name = "antal"></label>
         </fieldset>
         
         <fieldset>
             <legend> Varmrätter</legend>
-            <label> <input type = "checkbox" name = "varmrätt"> Falafel - 50$</label>
+            <label> <input type = "checkbox" name = "varmrätt" id="falafel"> Falafel - 50$</label>
             <label>Antal: <input type = "number" name = "antal"></label>
             <hr>
-            <label> <input type = "checkbox" name = "varmrätt"> Fattoush - 100$</label>
+            <label> <input type = "checkbox" name = "varmrätt" id="fattoush"> Fattoush - 100$</label>
             <label>Antal: <input type = "number" name = "antal"></label>
             <hr>
-            <label> <input type = "checkbox" name = "varmrätt"> Kofta - 300$</label>
+            <label> <input type = "checkbox" name = "varmrätt" id="kofta"> Kofta - 300$</label>
             <label>Antal: <input type = "number" name = "antal"></label>
         </fieldset>
 
         <fieldset>
             <legend> Efterrätter</legend>
-            <label> <input type = "checkbox" name = "efterrätt"> Chocolate Chip Cookie - 1$ </label>
+            <label> <input type = "checkbox" name = "efterrätt" id="chocolate"> Chocolate Chip Cookie - 1$ </label>
             <label>Antal: <input type = "number" name = "antal"></label>
             <hr>
-            <label> <input type = "checkbox" name = "efterrätt"> Michelle Obama's Cake - 400$ </label>
+            <label> <input type = "checkbox" name = "efterrätt" id="cake"> Michelle Obama's Cake - 400$ </label>
             <label>Antal: <input type = "number" name = "antal"></label>
             <hr>
-            <label> <input type = "checkbox" name = "efterrätt"> Obama's Favorite Apple Pie - 500$</label>
+            <label> <input type = "checkbox" name = "efterrätt" id="pie"> Obama's Favorite Apple Pie - 500$</label>
             <label>Antal: <input type = "number" name = "antal"></label>
         </fieldset>
 
-    </fieldset>
+        <fieldset>
+            <legend> Dryck</legend>
 
-    <div></div>
-
-    <fieldset>
-        <legend> Dryck</legend>
-
-        <label> <input type = "checkbox" name = "dryck"> Water - 5$ </label>
-        <label>Antal: <input type = "number" name = "antal"></label>
+            <label> <input type = "checkbox" name = "dryck" id="water"> Water - 5$ </label>
+            <label>Antal: <input type = "number" name = "antal"></label>
             <hr>
-            <label> <input type = "checkbox" name = "dryck"> Super Expensive Wine - 500$ </label>
+            <label> <input type = "checkbox" name = "dryck" id="wine"> Super Expensive Wine - 500$ </label>
             <label> Antal: <input type = "number" name = "antal"></label>
             <hr>
-            <label> <input type = "checkbox" name = "dryck"> Pepsi - 20,000$</label>
+            <label> <input type = "checkbox" name = "dryck" id="pepsi"> Pepsi - 20,000$</label>
             <label> Antal:<input type = "number" name = "antal"></label>
-    </fieldset>
+        </fieldset>
 
         <div>
             Meddelande till kocken:
@@ -126,25 +119,20 @@
     <hr>
     <button type="button" name = "send" onclick="SwitchToActive()" >Markera</button>
     <button type="button" name = "unsend" onclick="SwitchOffActive()">Omarkera</button>
-    <button type="button" name = "close" onclick="RestaurantInformation.closeRestaurant(false)">yo mama fat</button>
+    <button type="button" name = "close" onclick="RestaurantInformation.closeRestaurant(false)">yo</button>
+    <button type "button" name = "beställ" onclick="AddDataRowToTable()">Beställ</button>
 </form>
-
-
-<!-- Denna tabell ska innehålla i princip samma som där uppe. Just nu ska det vara statiskt. -->
 
 
 <table id="DataTable">
     <caption> Din Beställning: </caption>
     <tr rowspawn="1">
-        <td colspan="1">Förrätt</td>
-        <td colspan="2">Varmrätt</td>
-        <td colspan="3">Efterrätt</td>
-        <td colspan="4">Dryck</td>
+        <th colspan="1">Förrätt</th>
+        <th colspan="2">Varmrätt</th>
+        <th colspan="3">Efterrätt</th>
+        <th colspan="4">Dryck</th>
     </tr>
 
 </table>
-
-
-
 </body>
 </html>

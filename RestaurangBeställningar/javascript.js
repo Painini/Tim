@@ -11,6 +11,7 @@ const RestaurantInformation = {
         this.restaurantOpen = openStatus;
         console.log("closed")
         document.querySelector("#DataTable").classList.toggle("closed");
+        document.createElement("h1")
     }
 
 }
@@ -28,15 +29,15 @@ function SwitchOffActive()
 }
 //Kopierar från 
 
-function AddDataRowToTable ()
+function AddDataRowToTable()
 {
     
-    const myDataTable = document.querySelector("#DataTable")
-    const nyRad = document.createElement("tr")
-    const formContent = `
-    <td>${document.querySelector("förrätt").checked}</td> 
-    <td>${document.querySelector("varmrätt").checked}</td> 
-    <td>${document.querySelector("efterrätt").checked}</td> 
+    let myDataTable = document.querySelector("#DataTable")
+    let nyRad = document.createElement("tr")
+    let formContent = `
+    <td>${document.querySelector("#hamburger").checked}</td> 
+    <td>${document.querySelector("#hamburger").checked}</td> 
+    <td>${document.querySelector("#hamburger").checked}</td> 
     `;
 
     nyRad.innerHTML = formContent;
