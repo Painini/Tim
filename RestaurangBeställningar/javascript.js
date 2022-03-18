@@ -16,18 +16,18 @@ const RestaurantInformation = {
 
 }
 
-let listOfIds= [document.querySelector("hamburger"), 
-                document.querySelector("fries"),
-                document.querySelector("coke"),
-                document.querySelector("falafel"),
-                document.querySelector("fattoush"),
-                document.querySelector("kofta"),
-                document.querySelector("chocolate"),
-                document.querySelector("cake"),
-                document.querySelector("pie"),
-                document.querySelector("water"),
-                document.querySelector("wine"),
-                document.querySelector("pepsi"),]
+let listOfIds= [document.querySelector("#hamburger"), 
+                document.querySelector("#fries"),
+                document.querySelector("#coke"),
+                document.querySelector("#falafel"),
+                document.querySelector("#fattoush"),
+                document.querySelector("#kofta"),
+                document.querySelector("#chocolate"),
+                document.querySelector("#cake"),
+                document.querySelector("#pie"),
+                document.querySelector("#water"),
+                document.querySelector("#wine"),
+                document.querySelector("#pepsi"),]
 
 // Här tester jag att skriva ut olika texter med hjälp av JavaScript.
 
@@ -59,13 +59,36 @@ function SwitchOffActive()
     console.log("omarkerat")
 }
 
-function IfChecked(listOfIds)
+function CheckStatusAndComposeData(listOfIds, formContent)
 {
 
     // Lägg till For-loop så att du kan gå genom alla dina ID såsom du tänkt. (Alltså definierar du "i")
-    
-    document.querySelector("[id=" + listOfIds[i] + "]")
+    // for (let i = 0; i < 12; i++)
+    // {
+    //     if (document.querySelector("[id=" + listOfIds[i] + "]").checked == true)
+    //     {
 
+
+    //         if (listOfIds[i].classList.value == "förrätt")
+    //         {
+    //             formContent = ""
+    //         }
+    //         if (listOfIds[i].classList.value == "varmrätt")
+    //         {
+                
+    //         }
+    //         if (listOfIds[i].classList.value == "efterrätt")
+    //         {
+                
+    //         }
+    //         if (listOfIds[i].classList.value == "dryck")
+    //         {
+                
+    //         }
+    //     }
+    // }
+
+  
 }
 
 
@@ -74,13 +97,21 @@ function AddDataRowToTable()
 {
     let myDataTable = document.querySelector("#DataTable")
     let nyRad = document.createElement("tr")
-    let formContent = IfChecked(listOfIds)
+    let formContent = ""
+    //CheckStatusAndComposeData(listOfIds, formContent)
 
-    
+    for (let i = 0; i < 12; i++)
+    {
+        if (listOfIds[i].checked == true)
+        {
+            formContent += ` 
+            <td>${listOfIds[i].id}</td>
+            `
+        }
+    }
+  
 
-    
+
     nyRad.innerHTML = formContent;
     myDataTable.append(nyRad);
-
-    console.log("rumpa");
 }
