@@ -16,18 +16,18 @@ const RestaurantInformation = {
 
 }
 
-let listOfIds =[document.querySelector("#hamburger"), 
-                document.querySelector("#fries"),
-                document.querySelector("#coke"),
-                document.querySelector("#falafel"),
-                document.querySelector("#fattoush"),
-                document.querySelector("#kofta"),
-                document.querySelector("#chocolate"),
-                document.querySelector("#cake"),
-                document.querySelector("#pie"),
-                document.querySelector("#water"),
-                document.querySelector("#wine"),
-                document.querySelector("#pepsi"),]
+let listOfIds =[document.querySelector("hamburger"), 
+                document.querySelector("fries"),
+                document.querySelector("coke"),
+                document.querySelector("falafel"),
+                document.querySelector("fattoush"),
+                document.querySelector("kofta"),
+                document.querySelector("chocolate"),
+                document.querySelector("cake"),
+                document.querySelector("pie"),
+                document.querySelector("water"),
+                document.querySelector("wine"),
+                document.querySelector("pepsi"),]
 
 // Här tester jag att skriva ut olika texter med hjälp av JavaScript.
 
@@ -59,16 +59,24 @@ function SwitchOffActive()
     console.log("omarkerat")
 }
 
+function IfChecked(listOfIds)
+{
+
+    // Lägg till For-loop så att du kan gå genom alla dina ID såsom du tänkt.
+    
+    document.querySelector("[id=" + mittId + "]")
+
+}
+
+
+
 function AddDataRowToTable()
 {
-    
     let myDataTable = document.querySelector("#DataTable")
     let nyRad = document.createElement("tr")
-    let formContent = `
-    <td>${document.querySelector("#hamburger").checked}</td> 
-    <td>${document.querySelector("#fries").checked}</td> 
-    <td>${document.querySelector("#coke").checked}</td> 
-    `;
+    let formContent = IfChecked(listOfIds)
+
+    
 
     
     nyRad.innerHTML = formContent;
