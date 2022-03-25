@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="JavaScript/javascript.js" defer></script>
+</head>
+<body>
+    
+    <label><textarea rows="1" id="text"></textarea></label>
+
+    <div>
+        <button type="button" name="button" id="1" class="numButt" onclick=" WriteAbove(event)">1</button>
+        <button type="button" name="button" id="2" class="numButt" onclick=" WriteAbove(event)">2</button>
+        <button type="button" name="button" id="3" class="numButt" onclick=" WriteAbove(event)">3</button>
+    </div>
+   
+    <div>
+        <button type="button" name="button" id="4" class="numButt" onclick=" WriteAbove(event)">4</button>
+        <button type="button" name="button" id="5" class="numButt" onclick=" WriteAbove(event)">5</button>
+        <button type="button" name="button" id="6" class="numButt" onclick=" WriteAbove(event)">6</button>
+    </div>
+   
+    <div>
+        <button type="button" name="button" id="7" class="numButt" onclick=" WriteAbove(event)">7</button>
+        <button type="button" name="button" id="8" class="numButt" onclick=" WriteAbove(event)">8</button>
+        <button type="button" name="button" id="9" class="numButt" onclick=" WriteAbove(event)">9</button>
+    </div>
+   
+    <div>      
+        <button type="button" name="button" id="+" class="funButt" onclick=" WriteAbove(event)">+</button>
+        <button type="button" name="button" id="0" class="numButt" onclick=" WriteAbove(event)">0</button>
+        <button type="button" name="button" id="-" class="funButt" onclick=" WriteAbove(event)">-</button>
+    </div>
+    <div>
+        <button type="button" name="button" id="*" class="funButt" onclick=" WriteAbove(event)">*</button>
+        <button type="button" name="button" id="/" class="funButt" onclick=" WriteAbove(event)">/</button>
+        <button type="button" name="button" id="C" class="funButt" onclick="ClearTextArea()">C</button>
+    </div>
+    
+    <div>
+        <button type="button" name="button" id="." class="funButt" onclick="WriteAbove(event)">.</button>
+        <button type="button" name="button" id="=" class="funButt" onclick="Calculate()">=</button>
+    </div>
+    
+</body>
+</html>
