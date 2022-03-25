@@ -26,4 +26,3 @@ function Calculate()
   document.querySelector("#text").innerHTML = eval(x);
   flag = true;
 }
-
